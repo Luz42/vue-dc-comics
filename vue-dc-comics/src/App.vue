@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="d-flex justify-content-between flex-column">
     <!-- <img src="./assets/logo.png" alt="">
     <h1>APP</h1> -->
     <headerComponent/>
@@ -16,6 +16,7 @@ import mainComponent from './components/mainComponent.vue';
 import sectionNavComponent from './components/sectionNavComponent.vue';
 import sectionListComponent from './components/sectionListComponent.vue';
 import footerComponent from './components/footerComponent.vue';
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
   name: 'App',
@@ -32,11 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -45,8 +42,7 @@ export default {
   // text-align: center;
   // color: #2c3e50;
   // margin-top: 60px;
-  display: flex;
-  flex-direction: column;
+  
   height: 100vh;
 }
 

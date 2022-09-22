@@ -1,28 +1,34 @@
 <template>
-    <header>
-        <!-- <h1>HEADER</h1> -->
+    <header class="d-flex justify-content-between p-2">
+        <picture>
+            <img class="img-fluid" src="../assets/img/dc-logo.png" alt="">
+        </picture>
+        <headerNavComponent/>
     </header>
   </template>
   
   <script>
-  export default {
-    name: 'headerComponent'
+    import headerNavComponent from './headerNavComponent.vue';
+  
+    export default {
+    name: 'headerComponent',
+    components:{
+        headerNavComponent
+    }
   }
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
     
-    * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    }
 
     header{
-        width: 100%;
-        padding: 50px;
         background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 50px;
+        }
     }
   
   </style>
