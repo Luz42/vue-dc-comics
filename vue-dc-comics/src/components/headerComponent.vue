@@ -1,6 +1,6 @@
 <template>
-    <header class="d-flex justify-content-between p-0">
-        <picture class="d-flex align-items-center">
+    <header class="row d-flex justify-content-between p-0">
+        <picture class="col d-flex align-items-center">
             <img class="img-fluid m-1" src="../assets/img/dc-logo.png" alt="">
         </picture>
         <headerNavComponent/>

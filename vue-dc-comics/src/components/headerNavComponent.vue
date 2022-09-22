@@ -1,8 +1,12 @@
 <template>
-    <nav class="d-flex align'items-center">
+    <nav class="col d-flex align'items-center">
         <ul class="nav d-flex align-items-center">
-            <li @click="setActiveIndex(index)" v-for="(name, index) in linkNav" v-bind:key="name" :class="index === activeIndex ? 'ae-active' : ''" class="nav-item h-100 d-flex align-items-center text-uppercase fw-bold" style="color: black;">
-                <a class="nav-link" style="color: inherit; font-size: 0.8em;" aria-current="page" href="#">{{ name }}</a>
+            <li @click="setActiveIndex(index)" 
+                v-for="(name, index) in linkNav" v-bind:key="name" 
+                :class="index === activeIndex ? 'ae-active' : ''" 
+                class="nav-item h-100 d-flex align-items-center text-uppercase fw-bold" 
+                style="color: black;">
+                    <a class="nav-link" style="color: inherit; font-size: 0.8em;" aria-current="page" href="#">{{ name }}</a>
             </li>  
         </ul>
     </nav>

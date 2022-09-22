@@ -1,6 +1,6 @@
 <template>
-    <main>
-        <!-- <h1>MAIN</h1> -->
+    <main class="p-5">
+        <h1 class="m-0">-- Content goes here --</h1>
     </main>
   </template>
   
@@ -14,8 +14,8 @@
   <style scoped lang="scss">
 
     main{
-        width: 100%;
-        padding: 50px;
         background-color:  #1c1c1c;
+        color: white;
     }
+
   </style>
