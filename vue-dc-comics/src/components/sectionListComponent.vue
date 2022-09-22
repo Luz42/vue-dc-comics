@@ -1,17 +1,16 @@
 <template>
     <div>
-        <h1>HEADER</h1>
+        <h1>LIST</h1>
     </div>
   </template>
   
   <script>
   export default {
-    name: 'headerComponent'
+    name: 'sectionListComponent'
   }
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-
+    
   </style>
-  

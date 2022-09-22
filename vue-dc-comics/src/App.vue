@@ -1,18 +1,31 @@
 <template>
   <div id="app">
-    Questo è
+    <img src="./assets/logo.png" alt="">
+    <h1>APP</h1>
     <headerComponent/>
+    <mainComponent/>
+    <sectionNavComponent/>
+    <sectionListComponent/>
+    <footerComponent/>
   </div>
 </template>
 
 <script>
-import headerComponent from './components/headerComponent.vue'
+import headerComponent from './components/headerComponent.vue';
+import mainComponent from './components/mainComponent.vue';
+import sectionNavComponent from './components/sectionNavComponent.vue';
+import sectionListComponent from './components/sectionListComponent.vue';
+import footerComponent from './components/footerComponent.vue';
 
 export default {
   name: 'App',
   components: {
 
-    headerComponent
+    headerComponent,
+    mainComponent,
+    sectionNavComponent,
+    sectionListComponent,
+    footerComponent
     
   }
 }
