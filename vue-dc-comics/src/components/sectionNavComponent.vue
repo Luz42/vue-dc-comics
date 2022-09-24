@@ -3,7 +3,7 @@
       <div class="container-xl">
         <div class="row d-flex flex-nowrap">
           <div v-for="element in elementSection" v-bind:key="element" class="col px-2 d-flex align-items-center">
-            <img class="img-fluid h-25" :src="`./img/buy-${element}`" :alt="element">
+            <img class="img-fluid px-1 h-25" :src="`./img/buy-${element}`" :alt="element">
             <h6 class="text-uppercase m-0 px-2" style="color: white; font-size: 0.7em;">{{element}}</h6>
           </div>
          </div>

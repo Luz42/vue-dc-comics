@@ -3,7 +3,7 @@
     <!-- <img src="./assets/logo.png" alt="">
     <h1>APP</h1> -->
     <headerComponent/>
-    <mainComponent/>
+    <mainComponent :cards="mainList"/>
     <sectionNavComponent/>
     <sectionListComponent/>
     <footerComponent/>
@@ -17,6 +17,7 @@ import sectionNavComponent from './components/sectionNavComponent.vue';
 import sectionListComponent from './components/sectionListComponent.vue';
 import footerComponent from './components/footerComponent.vue';
 import 'bootstrap/dist/css/bootstrap.css'
+import listDcComics from './data/dc-comics.json'
 
 export default {
   name: 'App',
@@ -28,8 +29,12 @@ export default {
     sectionListComponent,
     footerComponent
 
-  }
+  },
+  data(){return{
+    mainList: listDcComics
+  }}
 }
+
 </script>
 
 <style lang="scss">
