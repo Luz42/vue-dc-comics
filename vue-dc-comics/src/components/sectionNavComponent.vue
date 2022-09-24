@@ -1,11 +1,13 @@
 <template>
-    <section class="p-5">
-      <div class="row">
-        <div v-for="element in elementSection" v-bind:key="element" class="col p-2 d-flex align-items-center">
-          <img class="img-fluid h-50" :src="`../assets/img/buy-${element}`" :alt="element">
-          <h6 class="text-uppercase flex-shrink-0 m-0 mx-2" style="color: white;">{{element}}</h6>
-        </div>
-      </div>  
+    <section>
+      <div class="container-xl">
+        <div class="row d-flex flex-nowrap">
+          <div v-for="element in elementSection" v-bind:key="element" class="col px-2 d-flex align-items-center">
+            <img class="img-fluid h-25" :src="`./img/buy-${element}`" :alt="element">
+            <h6 class="text-uppercase m-0 px-2" style="color: white; font-size: 0.7em;">{{element}}</h6>
+          </div>
+         </div>
+        </div>  
       </section>
   </template>
   

@@ -1,6 +1,6 @@
 <template>
-    <nav class="col d-flex align'items-center">
-        <ul class="nav d-flex align-items-center">
+    <nav class="col d-flex">
+        <ul class="nav d-flex align-items-center flex-shrink-0">
             <li @click="setActiveIndex(index)" 
                 v-for="(name, index) in linkNav" v-bind:key="name" 
                 :class="index === activeIndex ? 'ae-active' : ''" 
