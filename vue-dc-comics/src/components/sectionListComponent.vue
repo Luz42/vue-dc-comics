@@ -1,9 +1,14 @@
 <template>
     <section>
-      <div class="container-fluid">
+      <div class="container-xl">
         <div class="row">
-          <div style="color:white" class="col-6 d-flex flex-wrap">
-            <listComponent label="Dc" :links="dcLinks"/>
+          <div style="color:white" class="col-6">
+            <div class="row py-5">
+              <listComponent label="Dc Comics" :links="dcComics"/>
+              <listComponent label="dc" :links="dc"/>
+              <listComponent label="sites" :links="sites"/>
+              <listComponent label="shop" :links="shop"/>
+            </div>
           </div>
           <picture class="col-6">
             <!-- <img class="img-fluid" src="@/assets/img/dc-logo-bg.png" alt=""> -->
@@ -15,6 +20,7 @@
   
   <script>
   import listComponent from './listComponent.vue';
+  import { dcComics, shop, dc, sites } from '../assets/data/listListsFooter.js'
 
   export default {
     name: 'sectionListComponent',
@@ -22,7 +28,10 @@
       listComponent
     },
     data(){return{
-      dcLinks: ['batman', 'superman','wonderWoman','flash']
+      dcComics,
+      shop,
+      dc,
+      sites
     }}
   }
   </script>
@@ -32,7 +41,6 @@
 
     section{
         width: 100%;
-        padding: 50px;
         background-image:url("../assets/img/footer-bg.jpg") ;
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,6 +51,7 @@
       background-image:url("../assets/img/dc-logo-bg.png") ;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position-y: center;
     }
 
   </style>
