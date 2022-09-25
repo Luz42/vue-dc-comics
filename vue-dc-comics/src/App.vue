@@ -3,6 +3,7 @@
     <!-- <img src="./assets/logo.png" alt="">
     <h1>APP</h1> -->
     <headerComponent/>
+    <jumboComponent/>
     <mainComponent :cards="listDcComics"/>
     <sectionNavComponent/>
     <sectionListComponent/>
@@ -18,6 +19,8 @@ import sectionListComponent from './components/sectionListComponent.vue';
 import footerComponent from './components/footerComponent.vue';
 import 'bootstrap/dist/css/bootstrap.css'
 import listDcComics from '@/assets/data/dc-comics.json'
+import jumboComponent from './components/jumboComponent.vue';
+
 
 export default {
   name: 'App',
@@ -27,7 +30,9 @@ export default {
     mainComponent,
     sectionNavComponent,
     sectionListComponent,
-    footerComponent
+    footerComponent,
+    jumboComponent
+
 
   },
   data(){return{

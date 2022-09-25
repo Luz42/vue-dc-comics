@@ -1,6 +1,6 @@
 <template>
     <main>
-      <div class="container-fluid p-5"> 
+      <div class="container-xl p-5"> 
         <div class="row">
           <cardMainComponents :cardData="card" v-for="card in cards" :key="card.series"/>
           <!-- <div v-for="card in cards" :key="card.series"  class="col-2">{{ card.thumb }}</div> -->

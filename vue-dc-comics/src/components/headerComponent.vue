@@ -11,7 +11,7 @@
   
   <script>
     import headerNavComponent from './headerNavComponent.vue';
-  
+
     export default {
     name: 'headerComponent',
     components:{
