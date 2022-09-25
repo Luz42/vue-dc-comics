@@ -3,7 +3,7 @@
     <!-- <img src="./assets/logo.png" alt="">
     <h1>APP</h1> -->
     <headerComponent/>
-    <mainComponent :cards="mainList"/>
+    <mainComponent :cards="listDcComics"/>
     <sectionNavComponent/>
     <sectionListComponent/>
     <footerComponent/>
@@ -17,7 +17,7 @@ import sectionNavComponent from './components/sectionNavComponent.vue';
 import sectionListComponent from './components/sectionListComponent.vue';
 import footerComponent from './components/footerComponent.vue';
 import 'bootstrap/dist/css/bootstrap.css'
-import listDcComics from './data/dc-comics.json'
+import listDcComics from '@/assets/data/dc-comics.json'
 
 export default {
   name: 'App',
@@ -31,7 +31,7 @@ export default {
 
   },
   data(){return{
-    mainList: listDcComics
+    listDcComics
   }}
 }
 

@@ -1,12 +1,24 @@
 <template>
-    <main class="p-5">
-        <h1 v-for="card in cards" :key="card.thumb" class="m-0">{{card.series}}</h1>
+    <main>
+      <div class="container-fluid p-5"> 
+        <div class="row">
+          <cardMainComponents :cardData="card" v-for="card in cards" :key="card.series"/>
+          <!-- <div v-for="card in cards" :key="card.series"  class="col-2">{{ card.thumb }}</div> -->
+        </div>
+          <!-- <img :src="card.thumb" alt=""> -->
+      </div>
     </main>
   </template>
   
   <script>
+  import cardMainComponents from '@/components/cardMainComponent.vue'
+
   export default {
     name: 'mainComponent',
+    components:{
+     cardMainComponents
+    },
+
     props: {
       cards: Array
     }
